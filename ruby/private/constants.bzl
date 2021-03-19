@@ -6,7 +6,7 @@ TOOLCHAIN_TYPE_NAME = "%s//ruby:toolchain_type" % RULES_RUBY_WORKSPACE_NAME
 
 DEFAULT_BUNDLER_VERSION = "2.1.2"
 DEFAULT_RSPEC_ARGS = {"--format": "documentation", "--force-color": None}
-DEFAULT_RSPEC_GEMS = ["rspec", "rspec-its"]
+DEFAULT_RSPEC_GEMS = ["rspec"]
 DEFAULT_BUNDLE_NAME = "@bundle//"
 
 BUNDLE_BIN_PATH = "bin"
@@ -118,7 +118,6 @@ GEMSPEC_ATTRS = {
         allow_empty = True,
         default = {
             "rspec": "",
-            "rspec-its": "",
             "rubocop": "",
         },
         doc = "Key value pairs of gem dependencies (name, version) where version can be None",
